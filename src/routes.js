@@ -5,6 +5,7 @@ import Eat from "@/components/Eat";
 import Product from "@/components/Product";
 import Recipe from "@/components/Recipe";
 import Check from "@/components/Check";
+import Contact from "@/components/Contact";
 
 
 export const routes = [
@@ -28,6 +29,9 @@ export const routes = [
     },
     {
         path: '/check', component: Check
+    },
+    {
+        path: '/contact', component: Contact
     },
 
 ];

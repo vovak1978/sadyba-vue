@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="backgrond">
     <Header/>
 <router-view></router-view>
+
   </div>
 </template>
 
@@ -20,10 +21,17 @@ export default {
   created() {
     this.$store.dispatch('getProducts')
     this.$store.dispatch('getDishes')
-  }
+  },
+
+
 }
 </script>
 
 <style>
+.backgrond{
+  min-height: 100vh;
+  background-color: chocolate;
+
+}
 
 </style>

@@ -39,7 +39,8 @@ export default new Vuex.Store({
                 products.push({
                     id: doc.id,
                     name: doc.data().name,
-                    pricepergr: doc.data().pricepergr
+                    pricepergr: doc.data().pricepergr,
+                    priceperkg: doc.data().priceperkg
                 })
             })
             context.commit('getProducts', products)
